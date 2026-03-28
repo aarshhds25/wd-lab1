@@ -1,0 +1,31 @@
+.gallery {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    background-color: white;
+}
+
+.card {
+    padding: 10px;
+    background-color: white;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    transition: background-color 1s ease, border-color 1s ease;
+}
+
+.card img {
+    
+    width: 100%;
+    filter: grayscale(100%); 
+    transition: filter 1s ease;
+}
+
+
+.card:hover {
+    background-color: orangered; 
+    border-color: orangered;
+}
+
+.card:hover img {
+    filter: grayscale(0%);
+}
